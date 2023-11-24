@@ -11,7 +11,7 @@ from langchain.callbacks import get_openai_callback
 import os
 
 # Set OpenAI API key as an environment variable
-os.environ['OPENAI_API_KEY'] = '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'
+os.environ['OPENAI_API_KEY'] = 'your_api_key_here'
 
 # Function to extract text from PDF
 
