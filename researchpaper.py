@@ -14,8 +14,6 @@ import os
 os.environ['OPENAI_API_KEY'] = 'your_api_key_here'
 
 # Function to extract text from PDF
-
-
 def extract_text_from_pdf(pdf_file):
     pdf_reader = PdfReader(pdf_file)
     text = ""
@@ -24,8 +22,6 @@ def extract_text_from_pdf(pdf_file):
     return text
 
 # Function to extract and process information
-
-
 def extract_and_process_information(text, categories):
     text_splitter = RecursiveCharacterTextSplitter(
         chunk_size=1000,
@@ -51,8 +47,6 @@ def extract_and_process_information(text, categories):
     return extracted_info
 
 # Main function of the Streamlit app
-
-
 def main():
     st.title('Research Paper AI📚')
 
